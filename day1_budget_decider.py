@@ -1,16 +1,15 @@
+# Day 1: Budget Decision Program
+budget = 2500
+product_price = 800
 
-# يوم 1: قرار الميزانية
-ميزانية = 2500
-سعر_المنتج = 800
+print("=== Financial Decision Helper ===")
+print(f"Budget: {budget} EGP")
+print(f"Product Price: {product_price} EGP")
 
-print("=== مساعد القرار المالي ===")
-print(f"الميزانية: {ميزانية} جنيه")
-print(f"سعر المنتج: {سعر_المنتج} جنيه")
-
-if سعر_المنتج <= ميزانية:
-    print("✅ يمكنك الشراء")
-    print(f"سيبقى معك: {ميزانية - سعر_المنتج} جنيه")
+if product_price <= budget:
+    print("✅ You can buy this")
+    print(f"Remaining: {budget - product_price} EGP")
 else:
-    print("❌ السعر أعلى من الميزانية")
-    print(f"أنت تحتاج: {سعر_المنتج - ميزانية} جنيه إضافية")
-"day 1: budget decision program"
+    print("❌ Price exceeds budget")
+    print(f"You need: {product_price - budget} EGP more")
+    "day 1: budget decision program"
